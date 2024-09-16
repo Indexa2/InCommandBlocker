@@ -1,0 +1,9 @@
+# Aqui puede colocar el comando a bloquear, y el mundo en el que lo quieres hacer. 
+
+worlds:
+  world1:
+    - "/fly"
+    - "/tpa"
+  world2:
+    - "/kill"
+    - "/give"
