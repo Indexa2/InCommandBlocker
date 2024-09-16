@@ -1,0 +1,8 @@
+name: IndexDev
+main: IndexDev\InCommandBlocker\Main
+version: 1.0.0
+api: 5.0.0
+author: IndexDev
+description: Allow blocking commands in different worlds using MultiWorl as a dependency
+depend:
+  - MultiWorld
