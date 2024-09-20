@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerCommandPreprocessEvent;
 use pocketmine\utils\TextFormat;
-use MultiWordl\MultiWorld;
+use MultiWorld\MultiWorld;
 
 class Main extends PluginBase implements Listener {
 
