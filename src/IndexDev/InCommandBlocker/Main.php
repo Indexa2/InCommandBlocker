@@ -26,16 +26,16 @@ class Main extends PluginBase implements Listener {
     }
 
     public function onPlayerCommandPreprocess(PlayerCommandPreprocessEvent $event): void {
-        $player = $event->getPlayer();
+        $player = $ev->getPlayer();
         $worldName = $player->getWorld()->getDisplayName();
-        $message = $event->getMessage();
+        $message = $ev->getMessage();
 
         if (strpos($message, "/") === 0) {
             $command = explode(" ", strtolower($message))[0];
 
             if (CommandBlocker::getInstance()->isCommandBlocker($worldName, $command)) {
                 $player->sendMessasge(TextFormat::RED . "This command is locked in this world");
-                $event->cancel();
+                $ev->cancel();
             }
         }
     }
